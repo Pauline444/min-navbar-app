@@ -1,0 +1,16 @@
+/* Sidebar.css */
+.sidebar {
+    height: 100vh;
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        height: 80px;
+        margin-top: 0;
+    }
+
+    .btn {
+        font-size: smaller;
+    }
+
+}
