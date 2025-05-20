@@ -3,6 +3,8 @@ import './App.css'
 import Navbaren from './components/Navbaren';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
+import Header from './components/Header';
+import SideMenu from './components/SideMenu';
 
 
 function App() {
@@ -13,6 +15,9 @@ function App() {
       <div>
         <Navbaren onSelectPage={setActivePage} />
       </div>
+      <div>
+        <Header />
+      </div>
 
       <div className="container-fluid">
         <div className="row">
@@ -22,11 +27,18 @@ function App() {
           </div>
 
           {/* MainContent - full bredd på mobil (col-12), 9 kolumner på större skärmar (col-md-9) */}
-          <div className="col-12 col-md-9">
+          <div className="col-12 col-md-7">
             <MainContent activePage={activePage} />
+          </div>
+
+          {/* Buttons Component till höger */}
+          <div className="col-12 col-md-3">
+            <SideMenu />
           </div>
         </div>
       </div>
+
+
 
     </>
   )

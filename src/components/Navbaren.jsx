@@ -5,8 +5,7 @@ import './Navbar.css'; // Egen CSS för ev. justeringar
 const Navbaren = ({ onSelectPage }) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container-fluid">
-                <a className="navbar-brand" style={{ fontSize: 'larger' }} onClick={() => onSelectPage('home')} href="#">MyApp</a>
+            <div className="container-fluid m-2">
                 <button
                     className="navbar-toggler"
                     type="button"

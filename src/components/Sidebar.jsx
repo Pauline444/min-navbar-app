@@ -8,8 +8,8 @@ const Sidebar = ({ onSelectPage }) => {
         <div className="sidebar d-flex justify-content-center justify-content-md-start p-3 bg-light">
             <ul className="list-unstyled list-group list-group-flush flex-md-column flex-row">
                 <li className="nav-item">
-                    <button className="nav-link btn btn-link" onClick={() => onSelectPage('home')}>
-                        Välkommen
+                    <button className="nav-link btn btn-link" onClick={() => onSelectPage('task1')}>
+                        Uppgift 1
                     </button>
                 </li>
                 <li className="nav-item">
