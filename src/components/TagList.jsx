@@ -1,13 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Buttons from './Buttons';
+import TagButton from './TagButton';
 
-const SideMenu = function () {
+const TagList = function () {
     return (
         <div className='card m-4'>
             <div className='d-flex flex-wrap m-1'>
                 {[...Array(10)].map((_, index) => (
                     <div key={index}>
-                        <Buttons />
+                        <TagButton />
                     </div>
                 ))}
             </div>
@@ -15,4 +15,4 @@ const SideMenu = function () {
     );
 }
 
-export default SideMenu;
+export default TagList;

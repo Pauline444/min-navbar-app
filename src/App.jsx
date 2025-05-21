@@ -4,7 +4,7 @@ import Navbaren from './components/Navbaren';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
 import Header from './components/Header';
-import SideMenu from './components/SideMenu';
+import TagList from './components/TagList';
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
 
           {/* Buttons Component till höger */}
           <div className="col-12 col-md-3">
-            <SideMenu />
+            <TagList />
           </div>
         </div>
       </div>
